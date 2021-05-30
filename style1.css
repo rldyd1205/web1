@@ -1,0 +1,365 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 가로세로 길이를 보더기준으로 한다. */
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    align-items: center;
+
+}
+
+
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+
+}
+
+
+#main-page{
+    background: url(img/airbnbbg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 80vh;
+
+}
+
+.main-navi{
+    position: sticky;
+    background-color: white;
+    padding: 0px 158.1px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.main-navi .logo{
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+.main-navi .logo i {
+    font-size: 40px;
+    position: relative;
+    top: 6px;
+}
+.main-navi .logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 7px;
+}
+
+.main-navi .search {
+    display : flex;
+    position: absolute;
+    left : 50%;
+    transform:translateX(-50%);
+}
+
+
+.main-navi .search .btn_1 {
+    height: 48px;
+    width: 300px;
+    border-radius: 30px;
+    padding: 0 8px 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    outline: none;
+    font-weight: 900;
+    font-size: 14px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+.main-navi .search .btn_1:hover {
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.15);        /*rgba에서 a는 투명도*/
+
+    
+}
+
+
+.main-navi .search .bicon {
+    background-color: rgb(255,56,92);
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 7px 10px;
+    margin: 7px 0px 7px 7px;
+}
+
+.main-navi .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+
+}
+
+.main-navi .menu button{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+    border:none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size : 14px;
+    font-weight: 900;
+    margin: 3px;
+  
+}
+
+.main-navi .menu button:hover{
+    background-color: rgb(247,247,247);
+
+}
+
+.main-navi .menu button:nth-child(3):hover{
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.15);
+
+}
+
+.main-navi .menu button:nth-child(1){
+    
+    width: 150%;
+    padding: -60px;
+
+}
+
+.main-navi .menu button:nth-child(2){
+
+    width: 60%;    
+
+}
+
+
+.main-navi .menu button:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    color: #717171;    
+    border: solid #ddd 1px;
+    cursor: pointer;
+    background-color: white; 
+    font-size : 14px;
+    padding: 0px 2px 0px 8px;
+}
+
+
+
+
+
+.box {
+    width: 1600px;
+    height: 364px;
+    color: #222;
+    margin: 0px 78.1px;
+    padding: 0px 80px;
+
+}
+
+.box h1{
+    font-size: 4rem;
+    line-height: 62px;
+}
+.box p{
+    line-height: 62px;
+    font-size: 20px;
+}
+
+.box button {
+    background-color: black;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 7px 12px ;
+    font-weight:  900;
+}
+
+/* 첫번째 페이지 끝 */
+
+/* 첫번째 섹션 */
+
+#around {
+    margin: 0px 78.1px;
+}
+
+#around h1{
+    font-size: 32px;
+
+}
+
+#around .grid_1 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+#around .grid_1 .item_1:hover {
+    cursor: pointer;
+}
+
+#around .grid_1 .item_1 {
+    display: flex;
+    align-items: center;
+    font-size: 16;
+    line-height: 20px;
+    gap : 20px;
+    font-size: 16px;
+}
+
+#around .grid_1 .item_1 p:nth-child(1){
+    font-weight: 900;
+}
+
+#around img {
+    width: 64px;
+    height: 64px;
+    border-radius: 7px;
+}
+
+
+/* 두번째 섹션 everywhere */
+
+section {
+    padding: 25px 80px;
+    margin: 0px 78.1px;
+}
+
+section h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#everywhere .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#everywhere img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+/* 세번째 섹션 */
+
+#tobehost .host {
+    display: grid;
+    background: url(/img/젊은여자.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 17px;
+    width: 100%;
+    height: 480px;
+    align-items: center;
+}
+
+#tobehost .host .hotxt h1{
+    font-size: 48px;
+    line-height: 52px; 
+    margin-bottom: 12px;
+
+}
+
+#tobehost .host .hotxt {
+    color : white;
+    font-size: 18px;
+    padding : 0px 80px;
+ 
+}
+
+#tobehost .host .hotxt button {
+    margin-top: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 16px;
+    padding: 14px 24px;
+    font-weight: 900;
+}
+
+#tobehost .host .hotxt button:hover {
+    cursor: pointer;
+}
+
+
+#tobehost .host:hover{
+    cursor: pointer;
+}
+
+/* 네번째 섹션 */
+
+#experience .grid_3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#experience h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0px;
+
+}
+#experience h1:nth-child(2){
+    font-size: 26px;
+    font-weight: 400;
+    padding: 0 0 20px;
+}
+
+#experience img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+#experience .grid_3 .item_3 :nth-child(1){
+    font-size: 18px;
+    font-weight: 600 !important;
+
+}
+#experience .grid_3 .item_3 :nth-child(2){
+    font-size: 14px;
+    font-weight: 400 !important;
+}
+
+#experience .grid_3 .item_3:hover{
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .list_1 .foot li{
+    font-size: 14px;
+    list-style-type: none;
+    margin-top: 16px;
+}
+
+footer .list_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 71.5px;
+    padding: 0 80px;
+}
